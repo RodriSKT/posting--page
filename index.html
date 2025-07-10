@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blog do skatista</title>
+    <link rel="stylesheet" href="style.css"> 
+</head>
+<body>
+<!--parte inical da página com logo, navbar e botao de contato-->
+<header id="conteudo-cabecalho">
+    <div id="nav-logo">
+        <img alt="imagem-logo" src="skt2.jpg">
+    </div>
+
+    <div id="nav-bar">
+        <ul id="nav-list">
+            <li class="nav-itens"><a href="#">início</a></li>
+            <li class="nav-itens"><a href="#">blog</a></li>
+            <li class="nav-itens"><a href="#">redes sociais</a></li>
+        </ul>
+    </div>
+
+    <div class="btn-default">
+        <button>contato</button>
+    </div>
+</header>
+<!--fim do cabeçalho da página-->
+
+
+
+
+
+<!--início do body da página contendo o formulário do blog-->
+<main id="conteudo-principal">
+    <section class="form-container">
+        <h2>faça sua postagem skatista</h2>
+        <form id="form-content">
+            <label for="titulo">Titulo da postagem</label>
+            <input type="text" id="titulo" name="titulo" placeholder="digite o título" required/>
+
+
+            <label for="conteudo">Conteúdo do Post:</label>
+            <textarea id="conteudo" name="conteudo" placeholder="Digite o conteúdo" required></textarea>
+            <div class="btn-default">
+            <button type="summit">Enviar</button>
+            </div>
+      </form>
+    </section>
+
+    <section id="output-postagem">
+        <h2>último post criado</h2>
+        <h3 id="renderizador-titulo"></h3>
+        <p id="renderizador-conteudo"></p>
+
+    </section>
+
+<!--FIM DOS FORMULÁRIO DO BLOG-->
+
+
+
+
+</main>
+
+
+    <script src="script.js"></script>  
+</body>
+
+</html>
